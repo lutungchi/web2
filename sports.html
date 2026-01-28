@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <title>CLB Bóng đá – C Spirit CVA Football Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #222;
+    }
+    .header {
+      background: url('https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/473575101_122138631650547979_2085807410496998485_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGCVKl7h7oB094mA3ffXdMLCHQZQbW0ZSsIdBlBtbRlKwXBTVhgjH9IwuRstL9n7DKlTHkgK2DJGYzKZq3UZLVb&_nc_ohc=kS2cY3FYPW0Q7kNvwFSKlG5&_nc_oc=AdlQ6Sqze8mSv5fP3bSBtepoy9pHf6wPzyE4F0MUmoBQVI2XhfGPXhjbbh3vGbwIb6P8S4Pir4VUOX9SBzYHffhV&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=KOrqDzlFay4pA76bEui9nA&oh=00_Afqp3bXCWn3RNvn9lUxnZNVgPCi1sdEe41oqRvoPTCMCvQ&oe=697F31D2') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .header h1 {
+      color: #fff;
+      font-size: 3rem;
+      z-index: 1;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: #1a1a1a;
+      padding: 15px 0;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: 0.3s ease;
+    }
+    .nav a:hover {
+      color: #00e676;
+    }
+    .content {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+    .content h2 {
+      color: #009688;
+      margin-bottom: 12px;
+      font-size: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+    .footer {
+      background: #009688;
+      color: #fff;
+      text-align: center;
+      padding: 18px 20px;
+      margin-top: 30px;
+    }
+        .menu {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+  z-index: 2;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: rgba(255,255,255,0.25);
+}
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="header">
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music Club</a>
+    <a href="sports.html">Sports Club</a>
+  </div>
+
+  <h1>Football Club </h1>
+</div>
+
+  <!-- Giới thiệu -->
+  <div class="content">
+    <h2>Về CLB Bóng đá C Spirit</h2>
+    <p>
+      CLB Bóng đá C Spirit – CVA Football Club là câu lạc bộ bóng đá của học sinh Trường THPT Chuyên Chu Văn An, được thành lập với mục tiêu tạo ra môi trường cho các cầu thủ trẻ phát triển kỹ năng bóng đá, tinh thần thể thao và sự đoàn kết trong tập thể học sinh. 
+  </div>
+
+  <!-- Hình ảnh hoạt động -->
+  <div class="content">
+    <h2>Hoạt động & Hình ảnh</h2>
+    <div class="gallery">
+      <img src="h1.jpg" alt="Cầu thủ học sinh thi đấu">
+      <img src="h2.jpg" alt="Đội bóng tranh tài trên sân">
+      <img src="h3.jpg" alt="Vui vẻ trên sân bóng">
+      <img src="h4.jpg" alt="Các cầu thủ ăn mừng chiến thắng">
+    </div>
+    
+  </div>
+
+  <!-- Các hoạt động nổi bật -->
+  <div class="content">
+    <h2>Hoạt động nổi bật</h2>
+    <ul>
+      <li>Tập luyện kỹ thuật bóng đá hàng tuần dưới sự hướng dẫn của Ban huấn luyện.</li>
+      <li>Tổ chức thi đấu giao hữu với các lớp và CLB khác trong trường.</li>
+      <li>Tham gia các sự kiện thể thao và giải nhỏ trong khu vực trường học.</li>
+      <li>Mở đơn try-out tuyển thành viên mới cho các bạn yêu thích bóng đá. </li>
+    </ul>
+  </div>
+
+  <!-- Tuyển thành viên -->
+  <div class="content">
+    <h2>Tuyển thành viên mới</h2>
+    <p>
+      CLB mở đơn tuyển thành viên mới mỗi năm học để chào đón những bạn học sinh đam mê bóng đá, mong muốn nâng cao kỹ năng cá nhân và tham gia hoạt động tập thể. Mỗi buổi try-out là cơ hội để bạn thể hiện và gia nhập đội bóng. 
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 CLB Bóng đá – C Spirit CVA Football Club ⚽️</p>
+  </div>
+
+</body>
+</html>

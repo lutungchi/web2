@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CLB Trường THPT</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', system-ui, sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #333;
+    }
+    .header {
+      background: url('https://scontent.fdad3-3.fna.fbcdn.net/v/t39.30808-6/479241011_1419050292842921_5991595252077004816_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGVxw30JLwWfTOx2D1DjreAIvMB9Ay_UW4i8wH0DL9RbrIaQbQz8wI4ZT_h4ZhcRoU9Upysr2rjw0gD9a-sj23U&_nc_ohc=bxbpInRAKcoQ7kNvwFKYnLw&_nc_oc=Adm8pnpaMDKP0T6oavp-oglgKcAcAlWRHFPD-quK5Mc2x5graAu0igVwPgj9fiy1Wm6iSo4KenXa_N9aeA-Q8h6F&_nc_zt=23&_nc_ht=scontent.fdad3-3.fna&_nc_gid=zvnfQ54eKIL_UTSJphKC1Q&oh=00_AfqDCcFmBbxKiJPRAM5PHWsBd5GDvM59MCn2ijMqWjetlQ&oe=697F326A') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 0 20px;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+    .menu {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 25px;
+      z-index: 2;
+    }
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .menu a:hover {
+      background: rgba(255,255,255,0.25);
+    }
+    .header h1 {
+      position: relative;
+      color: #fff;
+      font-size: 3rem;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+    .header p {
+      position: relative;
+      color: #f1f1f1;
+      max-width: 800px;
+      font-size: 1.2rem;
+      z-index: 1;
+    }
+    .content {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+      line-height: 1.7;
+    }
+    .content h2 {
+      color: #0288d1;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    .club-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .club {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .club:hover {
+      transform: translateY(-6px);
+    }
+    .club img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .club div {
+      padding: 20px;
+    }
+    .club a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0288d1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer {
+      background: #0288d1;
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music Club</a>
+      <a href="sports.html">Sports Club</a>
+    </div>
+    <h1>Các Câu Lạc Bộ Trường THPT</h1>
+    <p>Nơi học sinh phát triển tài năng, đam mê và kỹ năng toàn diện</p>
+  </div>
+
+  <div class="content">
+    <h2>Giới thiệu chung</h2>
+    <p>
+      Các câu lạc bộ của trường THPT là môi trường năng động giúp học sinh rèn luyện kỹ năng,
+      nuôi dưỡng đam mê và gắn kết tinh thần tập thể thông qua các hoạt động học thuật,
+      nghệ thuật và thể thao.
+    </p>
+  </div>
+
+  <div class="content">
+    <h2>Các CLB tiêu biểu</h2>
+    <div class="club-box">
+      <div class="club">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+        <div>
+          <h3>CLB Âm nhạc</h3>
+          <p>Nơi học sinh thể hiện tài năng ca hát, chơi nhạc cụ và biểu diễn nghệ thuật.</p>
+          <a href="music.html">Xem chi tiết →</a>
+        </div>
+      </div>
+
+      <div class="club">
+        <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/11/hinh-anh-qua-bong-1.jpg">
+        <div>
+          <h3>CLB Thể thao</h3>
+          <p>Rèn luyện thể chất, tinh thần đồng đội qua các môn thể thao đa dạng.</p>
+          <a href="sports.html">Xem chi tiết →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 CLB Trường THPT chuyên Chu Văn An<br>Designed by Tùng Chi ❤️</p>
+  </div>
+</body>
+</html>
